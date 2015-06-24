@@ -47,6 +47,14 @@ class Main extends PluginBase implements Listener{
             if(strtolower($cmd->getName()) == "rwl" && !isset($args[2])){
                 if(isset($args[0])){
                     switch(strtolower($args[0])){
+                    	case "rwl":
+                    	    if($sender->hasPermission("rwl")) {
+                    	    	    $sender->sendMessage("----How To Use ReasonWL----");
+				    $sender->sendMessage("/rwl add [player] = add a player to the rwl list");
+				    $sender->sendMessage("/rwl remove [player] = exit remove a player from the rwl list");
+				    $sender->sendMessage("/rwl on = turn on the whitelist for rwl");
+				    $sender->sendMessage("/rwl off = turn off the whitelist for rwl");
+                    	    }
                         case "add":
                             if(!isset($args[1])){
                                 $sender->sendMessage(TextFormat::RED."/rwl add [player name]");
