@@ -71,11 +71,11 @@ class Main extends PluginBase implements Listener{
                             break;
                         case "on":
                             $this->turnWl("on");
-                            $sender->sendMessage(TextFormat::GREEN."Whitelist truned on");
+                            $sender->sendMessage(TextFormat::GREEN."Whitelist turned on");
                             break;
                         case "off":
                             $this->turnWl("off");
-                            $sender->sendMessage(TextFormat::GREEN."Whitelist truned off");
+                            $sender->sendMessage(TextFormat::GREEN."Whitelist turned off");
                             break;
                     }
                     if($args[0] !== "add" && $args[0] !== "remove" && $args[0] !== "off" && $args[0] !== "on") $sender->sendMessage(TextFormat::RED."/rwl add [player name]");
