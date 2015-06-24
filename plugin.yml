@@ -4,12 +4,13 @@ api: 1.12.0
 main: reasonWL\Main
 author: CreeperFace
 description: plugin for set custom reason for whitelist
+website: https://github.com/Creeperface01/ReasonWL
 
 commands:
     rwl:
         description: "whitelist command"
+        usage: "/rwl <add|remove|on|off>"
         permission: rwl
-
 permissions:
     rwl:
         description: "reasonWL plugin"
