@@ -21,7 +21,7 @@ permissions:
             rwl.remove:
                 description: "remove player from whitelist"
                 default: op
-            rwl.acces:
-                description: "alows join to server when is whitelisted"
+            rwl.access:
+                description: "allows group to join the server when it is whitelisted"
                 default: op
                 
